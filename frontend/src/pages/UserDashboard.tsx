@@ -1,4 +1,3 @@
-import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import axios from 'axios';
 import { useState } from 'react';
@@ -23,6 +22,7 @@ const UserDashboard = () => {
           id: parsedData.id,
           compony: parsedData.compony,
         });
+        console.log(scannedData)
         console.log(parsedData);
         setShowScanner(false);
 

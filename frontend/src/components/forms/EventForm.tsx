@@ -42,7 +42,6 @@ const formatDate = (date: Date): string => {
 const EventForm = ({
   id,
   values,
-  onDelete,
   onSubmit,
   disabled,
   errors,
