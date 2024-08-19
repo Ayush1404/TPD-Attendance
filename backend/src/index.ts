@@ -24,7 +24,7 @@ app.use("/api/admin", adminRouter);
 app.use("/api/user", userRouter);  // Keep userRouter
 app.use("/api/event", eventRouter); // Keep eventRouter
 app.get('/', (req, res) => {
-  res.json("server is running");
+  res.json("server is running...");
 });
 app.use(compression());
 createAdmin();
