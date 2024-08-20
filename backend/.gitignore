@@ -1,2 +1,5 @@
 node_modules
+dist
+utils/createAdmin.ts
+
 # Keep environment variables out of version control

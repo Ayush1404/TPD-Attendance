@@ -81,6 +81,9 @@ const UserDashboard = () => {
             onError={handleError}
             onScan={handleScan}
             style={{ width: '100%' }}
+            constraints={{
+              video: { facingMode: 'environment' }
+            }}
           />
         </DialogContent>
       </Dialog>

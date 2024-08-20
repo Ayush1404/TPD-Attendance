@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 import { router as adminRouter } from "./routes/adminRoutes";
 import { router as userRouter } from "./routes/userRoutes";
 import { router as eventRouter } from "./routes/eventRoutes";
-import { createAdmin } from './utils/createAdmin';
+//import { createAdmin } from './utils/createAdmin';
 
 dotenv.config();
 
@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
   res.json("server is running...");
 });
 app.use(compression());
-createAdmin();
+//createAdmin();
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
