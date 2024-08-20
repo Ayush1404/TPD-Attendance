@@ -81,7 +81,7 @@ const UserDashboard = () => {
             onError={handleError}
             onScan={handleScan}
             style={{ width: '100%' }}
-            facingMode={'front'}
+            facingMode={'rear'}
           />
         </DialogContent>
       </Dialog>
