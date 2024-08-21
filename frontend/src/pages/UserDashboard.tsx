@@ -21,8 +21,9 @@ const UserDashboard = () => {
         compony: parsedData.compony,
       });
       console.log(parsedData);
+      console.log(scannedData)
       setShowScanner(false);
-
+      
       // Make the API call to mark attendance
       const token = localStorage.getItem("authToken");
       if (!token) {
