@@ -13,13 +13,19 @@ const WelcomeMsg = () => {
         subtitle = "Scan the QR to mark your attendees.";
     }
     return (
-    <div className="space-y-2 mb=4">
-        <h2 className="text-2xl lg:text-4xl text-white font-medium ">
-            Welcome back 
-        </h2>
-        <p className="text-sm lg:text-base text-[#89B6FD]">
+        <div className="space-y-2 mb-4 flex ">
+            <div>
+<h2 className="text-2xl lg:text-4xl text-black font-medium mt-5">
+            Welcome Admin , 
+            </h2>
+         <h3 className="text-2xl lg:text-2xl text-black font-medium mt-2">
+            You can Create Events for specific companies
+            </h3>   
+        <p className="text-sm lg:text-base text-[#1c2739] mt-6">
             {subtitle}
         </p>
+            </div>
+        
         
     </div>
   )

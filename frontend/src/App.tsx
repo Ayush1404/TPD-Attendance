@@ -35,19 +35,25 @@ function App() {
             />
             <Route 
               path="/events" 
-              element={<ProtectedRoute roles={['admin','superAdmin']}>
+              element={
+                <ProtectedRoute roles={['admin', 'superAdmin']}>
+                <div className='bg-blue-300'>
                           <Layout>
                             <Events />
-                          </Layout>
-                        </ProtectedRoute>}
+                  </Layout>
+                  </div>
+                </ProtectedRoute>
+              }
             />
             <Route 
               path="/event/:eventId" 
-              element={<ProtectedRoute roles={['superAdmin']}>
+              element={
+                <ProtectedRoute roles={['superAdmin']}>
                           <Layout>
                             <EventPage />
                           </Layout>
-                        </ProtectedRoute>}
+                </ProtectedRoute>
+              }
             />
             <Route path="/signupuser" element={<SignupUser />} />
             <Route path="/signinuser" element={<SigninUser />} />
@@ -71,10 +77,15 @@ function App() {
 
 const Home = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center  bg-blue-500  p-4">
-      <div className="w-full max-w-4xl bg-white shadow-lg rounded-lg overflow-hidden">
+    
+
+ 
+      <div className="min-h-screen flex items-center justify-center  bg-blue-500  p-4">
+        
+      <div className="w-full max-w-lg bg-slate-300 shadow-2xl rounded-3xl overflow-hidden">
         <div className="sm:flex sm:flex-row">
-          <div className="sm:w-1/2 p-6 flex flex-col items-center justify-center">
+          
+          <div className=" p-6 flex flex-col items-center justify-center">
             <h1 className="text-3xl font-bold text-gray-800 mb-4">Welcome to <span className='text-blue-800'>Training and Placement Cell</span>  </h1>
             <p className="text-gray-600 mb-8">
               Join us and take the next step in your career. Sign up or sign in to explore opportunities.
@@ -84,9 +95,10 @@ const Home = () => {
               <Link to="/signupuser" className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">Sign Up</Link>
             </div>
           </div>
+          
         </div>
       </div>
-    </div>
+      </div>
   );
 };
 export default App

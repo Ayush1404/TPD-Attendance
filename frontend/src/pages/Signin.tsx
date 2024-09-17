@@ -61,15 +61,17 @@ const SignIn = () => {
           </div>
           <h1 className="font-bold text-3xl text-[#2E2A47]">
             Welcome  to <span className="text-blue-600">KIT TPO</span>
-          </h1>
+            </h1>
+           
        
-        <div className="">
+        <div >
           <Card>
             <CardHeader className="space-y-1">
               <CardTitle className="text-2xl">Log in to account</CardTitle>
               <CardDescription>
-                Enter your email below to login 
-              </CardDescription>
+                Enter your email below to login  <strong>For Admin</strong>
+                  </CardDescription>
+             
             </CardHeader>
             <CardContent className="grid gap-4">
               <div className="relative">

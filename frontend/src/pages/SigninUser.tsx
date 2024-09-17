@@ -52,22 +52,24 @@ const SigninUser = () => {
 
   return (
     <div className="min-h-screen grid grid-cols-1">
-      <div className="flex justify-center items-center">
-        <img src="kitlogo.png" alt=""  className="h-3/4"/>
-      </div>
       <div className="h-full lg:flex flex-col items-center justify-center px-4">
-        <div className="text-center ">
-          <h1 className="font-bold text-3xl text-[#2E2A47] -mt-10">
+        <div className="flex justify-center items-center">
+          <div>
+          <div className="m-auto flex justify-center">
+          <img src="./kitlogo.png" alt=""  className="w-4/6 h-4/6"/>
+          </div>
+      
+      
+          <h1 className="font-bold text-3xl text-[#2E2A47]">
             Welcome  to <span className="text-blue-600">KIT TPO</span>
           </h1>
-        </div>
         <div>
-          <Card  className="mt-8sssss">
+          <Card>
             <CardHeader className="space-y-1">
-              <CardTitle className="text-xl">Enter your email below to login</CardTitle>
+              <CardTitle className="text-2xl">Log in to account</CardTitle>
               <CardDescription>
-                 
-              </CardDescription>
+                Enter your email below to login  <strong>For Student</strong>
+                  </CardDescription>
             </CardHeader>
             <CardContent className="grid gap-4">
               <div className="relative">
@@ -146,7 +148,9 @@ const SigninUser = () => {
               </div>
             </CardFooter>
           </Card>
-        </div>
+            </div>
+            </div>
+      </div>
       </div>
     </div>
   )
