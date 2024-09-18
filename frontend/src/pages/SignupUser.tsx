@@ -8,7 +8,7 @@ import { EyeIcon, EyeOffIcon } from "lucide-react";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { Label } from "@radix-ui/react-label";
-import kitlogo from "../../public/kitlogo.png";
+import kitlogo from "./kitlogo.png";
 
 interface ErrorMessages {
   email?: string;
@@ -63,7 +63,7 @@ const SignupUser = () => {
       <div className="h-full lg:flex flex-col items-center justify-center px-4">
         <div className="text-center">
           <div className="flex justify-center items-center">
-            <img src={kitlogo} alt="kitlogo" className="w-1/2 h-1/2" />
+            <img src="./kitlogo.png" alt="kitlogo" className="w-1/2 h-1/2" />
           </div>
           <h1 className="font-bold text-3xl text-[#2E2A47]">
             Welcome to <span className="text-blue-600">KIT TPO</span>

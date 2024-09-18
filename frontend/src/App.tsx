@@ -27,11 +27,13 @@ function App() {
             <Route path="/signin" element={<SignIn />} />
             <Route 
               path="/admins" 
-              element={<ProtectedRoute roles={['superAdmin']}>
+              element={
+                <ProtectedRoute roles={['superAdmin']}>
                           <Layout>
                             <Admins />
                           </Layout>
-                        </ProtectedRoute>}
+                        </ProtectedRoute>
+              }
             />
             <Route 
               path="/events" 
@@ -64,7 +66,7 @@ function App() {
                   <Layout>
                     <UserDashboard />
                   </Layout>
-                </ProtectedRoute>
+                 </ProtectedRoute>
               }
             />
           </Routes>

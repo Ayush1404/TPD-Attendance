@@ -12,7 +12,7 @@ const Header = () => {
             <Navigation />
           </div>
         </div>
-        <WelcomeMsg />
+        <WelcomeMsg  />
       </div>
     </header>
   )
