@@ -8,7 +8,7 @@ import { EyeIcon, EyeOffIcon } from "lucide-react";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { Label } from "@radix-ui/react-label";
-import kitlogo from "./kitlogo.png";
+import kitlogo from "/kitlogo.png";
 
 interface ErrorMessages {
   email?: string;
@@ -63,7 +63,7 @@ const SignupUser = () => {
       <div className="h-full lg:flex flex-col items-center justify-center px-4">
         <div className="text-center">
           <div className="flex justify-center items-center">
-            <img src="./kitlogo.png" alt="kitlogo" className="w-1/2 h-1/2" />
+            <img src={kitlogo} alt="kitlogo" className="w-1/2 h-1/2" />
           </div>
           <h1 className="font-bold text-3xl text-[#2E2A47]">
             Welcome to <span className="text-blue-600">KIT TPO</span>
@@ -85,10 +85,10 @@ const SignupUser = () => {
               </div>
               <div className="grid gap-2">
                 <Label htmlFor="email">Email</Label>
-                <Input 
-                  id="email" 
-                  type="email" 
-                  placeholder="email@example.com" 
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder="email@example.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   disabled={isLoading}
@@ -103,16 +103,16 @@ const SignupUser = () => {
               <div className="grid gap-2">
                 <Label htmlFor="password">Password</Label>
                 <div className="flex  items-center">
-                  <Input 
-                    id="password" 
-                    type={isPasswordVisible ? 'text' : 'password'} 
+                  <Input
+                    id="password"
+                    type={isPasswordVisible ? 'text' : 'password'}
                     placeholder="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     disabled={isLoading}
                   />
-                  <Button 
-                    variant={'outline'} 
+                  <Button
+                    variant={'outline'}
                     onClick={() => setIsPasswordVisible((t) => !t)}
                     style={{
                       aspectRatio: 1,
@@ -135,16 +135,16 @@ const SignupUser = () => {
               <div className="grid gap-2">
                 <Label htmlFor="confirm-password">Confirm Password</Label>
                 <div className="flex items-center">
-                  <Input 
-                    id="confirm-password" 
-                    type={isPasswordVisible ? 'text' : 'password'} 
+                  <Input
+                    id="confirm-password"
+                    type={isPasswordVisible ? 'text' : 'password'}
                     placeholder="confirm password"
                     value={confirmPassword}
                     onChange={(e) => setConfirmPassword(e.target.value)}
                     disabled={isLoading}
                   />
-                  <Button 
-                    variant={'outline'} 
+                  <Button
+                    variant={'outline'}
                     onClick={() => setIsPasswordVisible((t) => !t)}
                     style={{
                       aspectRatio: 1,
@@ -165,25 +165,25 @@ const SignupUser = () => {
               </div>
             </CardContent>
             <CardFooter>
-                <div className="grid gap-2 w-full">
-                    <Button 
-                        className="w-full max-w-[500px] mx-auto bg-blue-600 hover:bg-blue-500"
-                        onClick={signupUser}
-                        disabled={isLoading}
-                        >
-                        {isLoading ? 'Signing up...' : 'Sign up'}
-                    </Button>
-                    <div className="relative">
-                        <div className="absolute inset-0 flex items-center">
-                            <span className="w-full border-t" />
-                        </div>
-                    </div>
-                    <div className="text-center mt-1">
-                        <span className="text-sm text-gray-600">
-                            Don't have an account? <Link to="/signinuser" className="text-blue-600 hover:underline">Log in</Link>
-                        </span>
-                    </div>
+              <div className="grid gap-2 w-full">
+                <Button
+                  className="w-full max-w-[500px] mx-auto bg-blue-600 hover:bg-blue-500"
+                  onClick={signupUser}
+                  disabled={isLoading}
+                >
+                  {isLoading ? 'Signing up...' : 'Sign up'}
+                </Button>
+                <div className="relative">
+                  <div className="absolute inset-0 flex items-center">
+                    <span className="w-full border-t" />
+                  </div>
                 </div>
+                <div className="text-center mt-1">
+                  <span className="text-sm text-gray-600">
+                    Don't have an account? <Link to="/signinuser" className="text-blue-600 hover:underline">Log in</Link>
+                  </span>
+                </div>
+              </div>
             </CardFooter>
           </Card>
         </div>
