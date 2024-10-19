@@ -1,0 +1,32 @@
+# Ignore node_modules directory
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Ignore build artifacts
+dist
+coverage
+
+# Ignore environment variable files
+.env
+.env.local
+
+# Ignore local configuration files
+*.local
+*.log
+
+# Ignore IDE or editor specific files
+.vscode
+.idea
+*.sublime-workspace
+*.sublime-project
+
+# Ignore Docker files for local development
+Dockerfile.dev
+docker-compose.yml
+
+# Ignore other unwanted files
+*.md
+*.tgz
+*.zip
+*.tar.gz

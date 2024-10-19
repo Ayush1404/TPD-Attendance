@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import { z } from 'zod';
 import { prisma } from '../config/dbconfig';
-
+import { User } from '@prisma/client';
 interface AuthenticatedRequest extends Request {
   headers: {
     id: string;
