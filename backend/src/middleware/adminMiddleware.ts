@@ -1,8 +1,6 @@
-import { PrismaClient, User } from '@prisma/client';
 import { Request, Response, NextFunction } from 'express';
 import { z } from 'zod';
-
-const prisma = new PrismaClient();
+import { prisma } from '../config/dbconfig';
 
 interface AuthenticatedRequest extends Request {
   headers: {
